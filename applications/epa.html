@@ -9,51 +9,101 @@
 <body class="is-preload">
 <!-- Wrapper -->
 <div id="wrapper">
-  <!-- Header -->
+    <!-- Header -->
 
-  <header id="header">
+    <header id="header">
 
-  </header>
-  <!-- Menu -->
-  <nav id="menu">
-    <h2>Menu</h2>
-    <ul>
-      <li><a href="../universal/index.html">Home</a></li>
-    </ul>
-  </nav>
+    </header>
+    <!-- Menu -->
+    <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="../universal/index.html">Home</a></li>
+        </ul>
+    </nav>
 
-  <!-- Main -->
-  <div id="main">
-    <div class="inner">
-      <div class="header">
-        <img src="../images/epa.png" alt=""/>
-      </div>
-      <h1>ePA</h1>
-      <p>
-        Text1
-        Text1
-        Text1
-        Text1 <br>
-        Text1
-        Text1
-        Text1
-        Text1
-        Text1
-        Text1
-        Text1
-        Text1
-        Text1
-        Text1
-      </p>
-      <p>
-        Text2
-      </p>
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+            <div class="header">
+                <img src="../images/epa.png" alt=""/>
+            </div>
+            <h1>ePA</h1>
+            <p>
+                This Page contains the implementation for ePA.
+            </p>
+            <div>
+                <h3><u>Service Localization</u></h3>
+                <p>This Section describe the libraries to use system specific functionality for Servic
+                    lLocalization.<br>
+                </p>
+                <section>
+                    <article>
+                        <a href="https://github.com/gematik/ref-ePA-Service-Localization-API">
+                            <h3>Service Location Api
+                                <img src="../images/Android_robot.svg" height="30" alt=""/>
+                                <img src="../images/java_q.jpg" height="30" alt=""/>
+                            </h3>
+                            <div class="content">
+                                <p>
+                                    This library contains Interface to be implemented by service localizer as entry
+                                    point to localize ePA service components. Start lookup DNS for retrieving endpoint
+                                    URLs of various ePA gateway services. Once lookup has been done successfully,
+                                    endpoint URLs for interfaces in ServiceInterfaceName can be retrieved.
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <br>
+                <section>
+                    <article>
+                        <a href="https://github.com/gematik/ref-ePA-Service-Localization">
+                            <h3>Service Location
+                                <img src="../images/java_q.jpg" height="30" alt=""/>
+                            </h3>
+                            <div class="content">
+                                <p>
+                                    The ServiceLocator class implements the IServiceLocalizer interface from ePA service
+                                    localization api and provides methods to start a new DNS lookup, e.g. if previous
+                                    one ended erroneously, to get the endpoint URL for a given interface name after a
+                                    successful lookup, the status of service lookup in DNS and the home community (OID,
+                                    which the file system provider has requested from DIMDI). This Library could be used
+                                    for desktop application.
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <br>
+                <section>
+                    <article>
+                        <a href="https://github.com/gematik/ref-ePA-Service-Localization-Android">
+                            <h3>Service Location
+                                <img src="../images/Android_robot.svg" height="30" alt=""/>
+                            </h3>
+                            <div class="content">
+                                <p>
+                                    The ServiceLocator class implements the IServiceLocalizer interface from ePA service
+                                    localization api and provides methods to start a new DNS lookup, e.g. if previous
+                                    one ended erroneously, to get the endpoint URL for a given interface name after a
+                                    successful lookup, the status of service lookup in DNS and the home community (OID,
+                                    which the file system provider has requested from DIMDI). This Library could be used
+                                    for Android application.
+                                </p>
+                            </div>
+                        </a>
+                    </article>
+                </section>
+                <br>
+
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- Footer -->
-  <footer id="footer">
-  </footer>
+    <!-- Footer -->
+    <footer id="footer">
+    </footer>
 </div>
 
 <!-- Scripts -->
@@ -64,11 +114,11 @@
 <script src="../assets/js/main.js"></script>
 
 <script>
-  $(function(){
-    $("#header").load("../common/header.html");
-    $("#footer").load("../common/footer.html");
-    $("#head").load("../common/head.html");
-  });
+    $(function () {
+        $("#header").load("../common/header.html");
+        $("#footer").load("../common/footer.html");
+        $("#head").load("../common/head.html");
+    });
 </script>
 </body>
 </html>
