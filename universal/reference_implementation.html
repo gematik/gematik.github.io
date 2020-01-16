@@ -37,330 +37,285 @@
                 This page list libraries and application there are implement for uses cases descript in gematik
                 specifications or to create gematik specifications.
             </p>
-            <h2>Card and Cardreader handling</h2>
+            <h3>Card and Cardreader handling</h3>
             <p>The following libraries are use to interact with card readers and health cards from desktop applications
                 such as mobile
                 devices like android phones or iphones. We use the following layered architecture:
-                <img src="../images/mob/ref-API-Layers.png" alt=""/>
             </p>
+            <p><img src="../images/mob/ref-API-Layers.png" alt=""/></p>
 
             <section>
                 <article>
-                    <a href="https://github.com/gematik/ref-OpenHealthCard-Events">
-                        <h3>OpenHealthCard-Events
+                    <h5>OpenHealthCard-Events</h5>
+                    <div class="content">
+                        <p>
+                            This library contains overarching events for several layers. That includes general
+                            events for info, warn and error. Additionally request events to get asynchronous input
+                            from user application.
+                        </p>
+                        <a href="https://github.com/gematik/ref-OpenHealthCard-Events">
+                            https://github.com/gematik/ref-OpenHealthCard-Events
                             <img src="../images/Android_robot.svg" height="30" alt=""/>
                             <img src="../images/java_q.jpg" height="30" alt=""/>
-                        </h3>
-                        <div class="content">
-                            <p>
-                                This library contains overarching events for several layers. That includes general
-                                events for info, warn and error. Additionally request events to get asynchronous input
-                                from user application.
-                            </p>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </article>
             </section>
             <br>
             <div>
-                <h3 id="HealthCardControl"><u>HealthCard Control</u></h3>
-                <p>This Section describe the usage of card reader.<br>
+                <h4 id="HealthCardControl-API">HealthCard Control API</h4>
+                <p>
                     <img src="../images/mob/ref-API-Layers-HealtCardControl.png" alt=""/>
                 </p>
                 <section>
                     <article>
-                        <a href="https://github.com/gematik/ref-HealthCardControl">
-                            <h3>HealthCard Control
+                        <h5>HealthCard Control</h5>
+                        <div class="content">
+                            <p>
+                                This library can be used to realize use cases for interacting with a German Health
+                                Card (eGk, elektronische Gesundheitskarte) via a mobile device.
+                                This is the main API on the highest level of abstraction of physical access
+                                providing functionality to gain access to application data on a healthcard including
+                                authentication and verification.
+                            </p>
+                            <a href="https://github.com/gematik/ref-HealthCardControl">
+                                https://github.com/gematik/ref-HealthCardControl
                                 <img src="../images/Android_robot.svg" height="30" alt=""/>
                                 <img src="../images/java_q.jpg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    This library can be used to realize use cases for interacting with a German Health
-                                    Card (eGk, elektronische Gesundheitskarte) via a mobile device.
-                                    This is the main API on the highest level of abstraction of physical access
-                                    providing functionality to gain access to application data on a healthcard including
-                                    authentication and verification.
-                                </p>
-                            </div>
-                        </a>
-                    </article>
-                </section>
-                <br>
-                <section>
-                    <article>
-                        <a href="https://github.com/gematik/ref-HealthCardControlCommon">
-                            <h3>HealthCard Control Common
-                                <img src="../images/Android_robot.svg" height="30" alt=""/>
-                                <img src="../images/java_q.jpg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    This library contains control implementation overarching functionalities like
-                                    CardDetector to determine automatically the current
-                                    present card type and generation and inform about card events. The Events send over
-                                    EventBus are stored in package de.gematik.ti.healthcard.control.common.events and
-                                    subpackages.
-                                    Futhermore functionality for pace and verifyPin handling.
-                                </p>
-                            </div>
-                        </a>
-                    </article>
-                </section>
-                <br>
-                <section>
-                    <article>
-                        <a href="https://github.com/gematik/ref-HealthCardControlKit">
-                            <h3>HealthCard Control Kit
-                                <img src="../images/Apple_Logo.svg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    This library can be used to realize use cases for interacting with a German Health
-                                    Card (eGk, elektronische Gesundheitskarte) via a mobile device.
-                                    <br>
+                            </a><br>
 
-                                    Typically you would use this library as the high level API gateway for your mobile
-                                    application to send predefined command chains to the Health Card and interpret the
-                                    responses.
-                                </p>
-                            </div>
-                        </a>
-                    </article>
-                </section>
-                <br>
-            </div>
-            <div>
-                <h3 id="HealthCardAccess"><u>HealthCard Access</u></h3>
-                <p>This Section describe the usage of card reader.<br>
-                    <img src="../images/mob/ref-API-Layers-HealtCardAccess.png" alt=""/>
-                </p>
-                <section>
-                    <article>
-                        <a href="https://github.com/gematik/ref-HealthCardAccess">
-                            <h3>HealthCard Access
-                                <img src="../images/Android_robot.svg" height="30" alt=""/>
-                                <img src="../images/java_q.jpg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    This library could use to send smartcard commands to a smartcard connected to card
-                                    reader.
-                                </p>
-                            </div>
-                        </a>
-                    </article>
-                </section>
-                <br>
-                <section>
-                    <article>
-                        <a href="https://github.com/gematik/ref-HealthCardAccessKit">
-                            <h3>HealthCard Access Kit
+                            <a href="https://github.com/gematik/ref-HealthCardControlKit">
+                                https://github.com/gematik/ref-HealthCardControlKit
                                 <img src="../images/Apple_Logo.svg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    This library could use to send smartcard commands to a smartcard connected to card
-                                    reader.
-                                </p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                    </article>
+                </section>
+                <br>
+                <section>
+                    <article>
+                        <h5>HealthCard Control Common</h5>
+                        <div class="content">
+                            <p>
+                                This library contains control implementation overarching functionalities like
+                                CardDetector to determine automatically the current
+                                present card type and generation and inform about card events. The Events send over
+                                EventBus are stored in package de.gematik.ti.healthcard.control.common.events and
+                                subpackages.
+                                Futhermore functionality for pace and verifyPin handling.
+                            </p>
+                            <a href="https://github.com/gematik/ref-HealthCardControlCommon">
+                                https://github.com/gematik/ref-HealthCardControlCommon
+                                <img src="../images/Android_robot.svg" height="30" alt=""/>
+                                <img src="../images/java_q.jpg" height="30" alt=""/>
+                            </a>
+                        </div>
                     </article>
                 </section>
                 <br>
             </div>
             <div>
-                <h3 id="CardReaderAccess"><u>CardReader Access</u></h3>
-                <p>This Section describe the usage of card reader.<br>
-                    <img src="../images/mob/ref-API-Layers-CardReaderAccess.png" alt=""/>
+                <h4 id="HealthCardAccess">HealthCard Access</h4>
+                <img src="../images/mob/ref-API-Layers-HealtCardAccess.png" alt=""/>
                 </p>
                 <section>
                     <article>
-                        <a href="https://github.com/gematik/ref-CardReaderAccess">
-                            <h3>CardReader Access
+                        <div class="content">
+                            <p>
+                                This library could use to send smartcard commands to a smartcard connected to card
+                                reader.
+                            </p>
+                            <a href="https://github.com/gematik/ref-HealthCardAccess">
+                                https://github.com/gematik/ref-HealthCardAccess
                                 <img src="../images/Android_robot.svg" height="30" alt=""/>
                                 <img src="../images/java_q.jpg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    The CardReader Access Library add functionality to use different card reader and
-                                    provider in your application. The CardReaderAccess API provides a registry for
-                                    higher layer applications to inform about new connected and disconnected card
-                                    reader.
-                                </p>
-                            </div>
-                        </a>
+                            </a> <br>
+
+                            <a href="https://github.com/gematik/ref-HealthCardAccess">
+                                https://github.com/gematik/ref-HealthCardAccessKit
+                                <img src="../images/Apple_Logo.svg" height="30" alt=""/>
+                            </a>
+                        </div>
+
+                    </article>
+                </section>
+                <br>
+            </div>
+            <div>
+                <h4 id="CardReaderAccess">CardReader Access</h4>
+                <img src="../images/mob/ref-API-Layers-CardReaderAccess.png" alt=""/>
+                </p>
+                <section>
+                    <article>
+                        <div class="content">
+                            <p>
+                                The CardReader Access Library add functionality to use different card reader and
+                                provider in your application. The CardReaderAccess API provides a registry for
+                                higher layer applications to inform about new connected and disconnected card
+                                reader.
+                            </p>
+                            <a href="https://github.com/gematik/ref-CardReaderAccess">
+                                https://github.com/gematik/ref-CardReaderAccess
+                                <img src="../images/Android_robot.svg" height="30" alt=""/>
+                                <img src="../images/java_q.jpg" height="30" alt=""/>
+                            </a>
+                        </div>
                     </article>
                 </section>
                 <br>
             </div>
 
             <div>
-                <h3 id="CardReader"><u>CardReader</u></h3>
-                <p>This Section describe the integration of card reader.<br>
-                    <img src="../images/mob/ref-API-Layers-CardReaderProviderApi.png" alt=""/>
+                <h4 id="CardReader">CardReader Provider API</h4>
+                <img src="../images/mob/ref-API-Layers-CardReaderProviderApi.png" alt=""/>
                 </p>
                 <section>
                     <article>
-                        <a href="https://github.com/gematik/ref-CardReaderProvider-Api">
-                            <h3>CardReader Provider API
+                        <div class="content">
+                            <p>
+                                The CardReader Provider API define the general communication interface between
+                                application and
+                                HealthCardReader to abstract the specific implementation for each hardware card
+                                reader.
+                                The
+                                CardReader Provider for each specific hardware are implemented as Java Service
+                                Provider
+                                and would load
+                                dynamically by ServiceLoader implemented in CardReaderAccess.
+                            </p>
+                            <a href="https://github.com/gematik/ref-CardReaderProvider-Api">
+                                https://github.com/gematik/ref-CardReaderProvider-Api
                                 <img src="../images/Android_robot.svg" height="30" alt=""/>
                                 <img src="../images/java_q.jpg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    The CardReader Provider API define the general communication interface between
-                                    application and
-                                    HealthCardReader to abstract the specific implementation for each hardware card
-                                    reader.
-                                    The
-                                    CardReader Provider for each specific hardware are implemented as Java Service
-                                    Provider
-                                    and would load
-                                    dynamically by ServiceLoader implemented in CardReaderAccess.
-                                </p>
-                            </div>
-                        </a>
-                    </article>
-                </section>
-                <br>
+                            </a> <br>
 
-                <section>
-                    <article>
-                        <a href="https://github.com/gematik/ref-CardReaderProvider-ApiKit">
-                            <h3>CardReader Provider API Kit
+                            <a href="https://github.com/gematik/ref-CardReaderProvider-ApiKit">
+                                https://github.com/gematik/ref-CardReaderProvider-ApiKit
                                 <img src="../images/Apple_Logo.svg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    The CardReader Provider API define the general communication interface between
-                                    application and
-                                    HealthCardReader to abstract the specific implementation for each hardware card
-                                    reader.
-                                    The
-                                    CardReader Provider for each specific hardware are implemented as Java Service
-                                    Provider
-                                    and would load
-                                    dynamically by ServiceLoader implemented in CardReaderAccess.
-                                </p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+
                     </article>
                 </section>
-                <br>
 
-                <p><br>
-                    <img src="../images/mob/ref-API-Layers-CardReaderProvider.png" alt=""/> <br>
-                    This Section describe the integration of card reader. The CardReader Provider for each specific
-                    hardware
-                    are implemented as Java Service Provider and would load dynamically by ServiceLoader implemented in
-                    CardReaderAccess.
-                </p>
+                <br>
+                <section>
+                    <article>
+                        <h4>CardReader Provider</h4>
+                        <div class="content">
+                            <p>This Section describe the integration of card reader. The CardReader Provider for each specific
+                                hardware
+                                are implemented as Java Service Provider and would load dynamically by ServiceLoader implemented in
+                                CardReaderAccess.</p>
+                            <p><img src="../images/mob/ref-API-Layers-CardReaderProvider.png" alt=""/> <br>
+                            </p>
+                        </div>
+                    </article>
+                </section>
 
                 <section>
                     <article>
-                        <a href="https://github.com/gematik/ref-CardReaderProvider-PCSC">
-                            <h3>PCSC CardReader Provider
+                        <h5>PCSC CardReader Provider
+                        </h5>
+                        <div class="content">
+                            <p>
+                                CardReader Provider library to use PCSC CardReader in your application.
+                            </p>
+                            <a href="https://github.com/gematik/ref-CardReaderProvider-PCSC">
+                                https://github.com/gematik/ref-CardReaderProvider-PCSC
                                 <img src="../images/java_q.jpg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    CardReader Provider library to use PCSC CardReader in your application.
-                                </p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </article>
                 </section>
                 <br>
                 <section>
                     <article>
-                        <a href="https://github.com/gematik/ref-CardReaderProvider-NFC-Android">
-                            <h3>NFC CardReader Provider
+                        <h5>NFC CardReader Provider
+                        </h5>
+                        <div class="content">
+                            <p>
+                                CardReader Provider library to use NFC CardReader in your application.
+                            </p>
+                            <a href="https://github.com/gematik/ref-CardReaderProvider-NFC-Android">
+                                https://github.com/gematik/ref-CardReaderProvider-NFC-Android
                                 <img src="../images/Android_robot.svg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    CardReader Provider library to use NFC CardReader in your android application.
-                                </p>
-                            </div>
-                        </a>
-                    </article>
-                </section>
-                <br>
-                <section>
-                    <article>
-                        <a href="https://github.com/gematik/ref-CardReaderProvider-NFC-iOS">
-                            <h3>NFC CardReade rProvider
+                            </a> <br>
+
+                            <a href="https://github.com/gematik/ref-CardReaderProvider-NFC-iOS">
+                                https://github.com/gematik/ref-CardReaderProvider-NFC-iOS
                                 <img src="../images/Apple_Logo.svg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    CardReader Provider library to use NFC CardReader in your ios application.
-                                </p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </article>
                 </section>
                 <br>
                 <section>
                     <article>
-                        <a href="https://github.com/gematik/ref-CardReaderProvider-USB-Identos-Android">
-                            <h3>USB Identos CardReader Provider
+                        <h5>USB Identos CardReader Provider
+                        </h5>
+
+                        <div class="content">
+                            <p>
+                                CardReader Provider library to use USB Identos CardReader in your android
+                                application.
+                            </p>
+                            <a href="https://github.com/gematik/ref-CardReaderProvider-USB-Identos-Android">
+                                https://github.com/gematik/ref-CardReaderProvider-USB-Identos-Android
                                 <img src="../images/Android_robot.svg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    CardReader Provider library to use USB Identos CardReader in your android
-                                    application.
-                                </p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </article>
                 </section>
                 <br>
                 <section>
                     <article>
-                        <a href="https://github.com/gematik/ref-CardReaderProvider-USB-Tactivo-Android">
-                            <h3>USB Tactivo CardReader Provider
+                        <h5>USB Tactivo CardReader Provider
+                        </h5>
+                        <div class="content">
+                            <p>
+                                CardReader Provider library to use USB Tactivo CardReader in your android
+                                application.
+                            </p>
+                            <a href="https://github.com/gematik/ref-CardReaderProvider-USB-Tactivo-Android">
+                                https://github.com/gematik/ref-CardReaderProvider-USB-Tactivo-Android
                                 <img src="../images/Android_robot.svg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    CardReader Provider library to use USB Tactivo CardReader in your android
-                                    application.
-                                </p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+
                     </article>
                 </section>
                 <br>
                 <section>
                     <article>
-                        <a href="https://github.com/gematik/ref-CardReaderProvider-Bluetooth-Feitian-Android">
-                            <h3>Bluetooth Feitian CardReader Provider
+                        <h5>Bluetooth Feitian CardReader Provider
+                        </h5>
+                        <div class="content">
+                            <p>
+                                CardReader Provider library to use Bluetooth Feitian CardReader in your android
+                                application.
+                            </p>
+                            <a href="https://github.com/gematik/ref-CardReaderProvider-Bluetooth-Feitian-Android">
+                                https://github.com/gematik/ref-CardReaderProvider-Bluetooth-Feitian-Android
                                 <img src="../images/Android_robot.svg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    CardReader Provider library to use Bluetooth Feitian CardReader in your android
-                                    application.
-                                </p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </article>
                 </section>
                 <br>
                 <section>
                     <article>
-                        <a href="https://github.com/gematik/ref-CardReaderProvider-CardSimulationKit">
-                            <h3>CardSimulation CardReader Provider
+                        <h5>CardSimulation CardReader Provider
+                        </h5>
+                        <div class="content">
+                            <p>
+                                CardReader Provider for communication with G2-CardSimulation
+                            </p>
+                            <a href="https://github.com/gematik/ref-CardReaderProvider-CardSimulationKit">
+                                https://github.com/gematik/ref-CardReaderProvider-CardSimulationKit
                                 <img src="../images/Apple_Logo.svg" height="30" alt=""/>
-                            </h3>
-                            <div class="content">
-                                <p>
-                                    CardReader Provider for communication with G2-CardSimulation
-                                </p>
-                            </div>
+                            </a>
+                        </div>
                         </a>
                     </article>
                 </section>
