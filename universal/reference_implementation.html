@@ -34,13 +34,11 @@
             </div>
             <h1>Reference implementation</h1>
             <p>
-                This page list libraries and application there are implement for uses cases descript in gematik
-                specifications or to create gematik specifications.
+                Following libraries provide an implementation of selected parts of telematics infrastructure specifications by gematik.
             </p>
             <h3>Card and Cardreader handling</h3>
-            <p>The following libraries are use to interact with card readers and health cards from desktop applications
-                such as mobile
-                devices like android phones or iphones. We use the following layered architecture:
+            <p>The following libraries provide functionality to interact with card readers and health cards. They can be used by desktop applications and mobile
+                devices covering Android and iOS platform. Following layered architecture is applied to those libraries:
             </p>
             <p><img src="../images/mob/ref-API-Layers.png" alt=""/></p>
 
@@ -50,8 +48,8 @@
                     <div class="content">
                         <p>
                             This library contains overarching events for several layers. That includes general
-                            events for info, warn and error. Additionally request events to get asynchronous input
-                            from user application.
+                            events for info, warn and error. Additionally events can be requested to get asynchronous input
+                            from user application layer.
                         </p>
                         <a href="https://github.com/gematik/ref-OpenHealthCard-Events">
                             https://github.com/gematik/ref-OpenHealthCard-Events
@@ -97,12 +95,12 @@
                         <h5>HealthCard Control Common</h5>
                         <div class="content">
                             <p>
-                                This library contains control implementation overarching functionalities like
-                                CardDetector to determine automatically the current
-                                present card type and generation and inform about card events. The Events send over
+                                This library contains the implementation control functionality like a
+                                CardDetector to automatically determine the card type of the card currently present
+                                and the information about card events. The events sent over
                                 EventBus are stored in package de.gematik.ti.healthcard.control.common.events and
                                 subpackages.
-                                Futhermore functionality for pace and verifyPin handling.
+                                Futhermore it contains functionality for PACE authentication and PIN verification handling.
                             </p>
                             <a href="https://github.com/gematik/ref-HealthCardControlCommon">
                                 https://github.com/gematik/ref-HealthCardControlCommon
@@ -122,7 +120,7 @@
                     <article>
                         <div class="content">
                             <p>
-                                This library could use to send smartcard commands to a smartcard connected to card
+                                This library is used to send smartcard commands to a smartcard connected to card
                                 reader.
                             </p>
                             <a href="https://github.com/gematik/ref-HealthCardAccess">
@@ -149,9 +147,9 @@
                     <article>
                         <div class="content">
                             <p>
-                                The CardReader Access Library add functionality to use different card reader and
-                                provider in your application. The CardReaderAccess API provides a registry for
-                                higher layer applications to inform about new connected and disconnected card
+                                The CardReaderAccess library adds functionality to use different card readers and
+                                card reader providers in an application. The CardReaderAccess API provides a registry for
+                                higher layer applications to inform about newly connected and disconnected card
                                 reader.
                             </p>
                             <a href="https://github.com/gematik/ref-CardReaderAccess">
@@ -173,15 +171,12 @@
                     <article>
                         <div class="content">
                             <p>
-                                The CardReader Provider API define the general communication interface between
+                                The CardReader Provider API defines the general communication interface between
                                 application and
-                                HealthCardReader to abstract the specific implementation for each hardware card
-                                reader.
-                                The
-                                CardReader Provider for each specific hardware are implemented as Java Service
-                                Provider
-                                and would load
-                                dynamically by ServiceLoader implemented in CardReaderAccess.
+                                HealthCardReader in order to abstract the specific implementation from the hardware of card
+                                readers.
+                                A CardReader Provider needs to be implemented for each specific hardware as Java Service
+                                Provider. It is loaded dynamically by ServiceLoader implemented in CardReaderAccess.
                             </p>
                             <a href="https://github.com/gematik/ref-CardReaderProvider-Api">
                                 https://github.com/gematik/ref-CardReaderProvider-Api
@@ -203,10 +198,7 @@
                     <article>
                         <h4>CardReader Provider</h4>
                         <div class="content">
-                            <p>This Section describe the integration of card reader. The CardReader Provider for each specific
-                                hardware
-                                are implemented as Java Service Provider and would load dynamically by ServiceLoader implemented in
-                                CardReaderAccess.</p>
+                            <p>Here you can find sample implementation fo some card reader providers.</p>
                             <p><img src="../images/mob/ref-API-Layers-CardReaderProvider.png" alt=""/> <br>
                             </p>
                         </div>
@@ -219,7 +211,7 @@
                         </h5>
                         <div class="content">
                             <p>
-                                CardReader Provider library to use PCSC CardReader in your application.
+                                CardReader Provider library to use a PCSC CardReader in your application.
                             </p>
                             <a href="https://github.com/gematik/ref-CardReaderProvider-PCSC">
                                 https://github.com/gematik/ref-CardReaderProvider-PCSC
@@ -257,7 +249,7 @@
 
                         <div class="content">
                             <p>
-                                CardReader Provider library to use USB Identos CardReader in your android
+                                CardReader Provider library to use USB Identos CardReader in your Android
                                 application.
                             </p>
                             <a href="https://github.com/gematik/ref-CardReaderProvider-USB-Identos-Android">
@@ -274,7 +266,7 @@
                         </h5>
                         <div class="content">
                             <p>
-                                CardReader Provider library to use USB Tactivo CardReader in your android
+                                CardReader Provider library to use USB Tactivo CardReader in your Android
                                 application.
                             </p>
                             <a href="https://github.com/gematik/ref-CardReaderProvider-USB-Tactivo-Android">
@@ -292,7 +284,7 @@
                         </h5>
                         <div class="content">
                             <p>
-                                CardReader Provider library to use Bluetooth Feitian CardReader in your android
+                                CardReader Provider library to use Bluetooth Feitian CardReader in your Android
                                 application.
                             </p>
                             <a href="https://github.com/gematik/ref-CardReaderProvider-Bluetooth-Feitian-Android">
