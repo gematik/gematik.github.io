@@ -1,0 +1,307 @@
+<!--Copyright 2023 gematik GmbH-->
+
+<!--Licensed under the Apache License, Version 2.0 (the "License");-->
+<!--you may not use this file except in compliance with the License.-->
+<!--You may obtain a copy of the License at-->
+
+<!--http://www.apache.org/licenses/LICENSE-2.0-->
+
+<!--Unless required by applicable law or agreed to in writing, software-->
+<!--distributed under the License is distributed on an "AS IS" BASIS,-->
+<!--WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.-->
+<!--See the License for the specific language governing permissions and-->
+<!--limitations under the License.-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head id="head">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+</head>
+
+<body class="is-preload">
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Header -->
+  <header id="header"></header>
+
+  <div class="container d-flex flex-column align-items-center pt-5">
+    <!-- Main -->
+
+
+    <div class="w-100">
+      <div class="d-flex">
+        <span
+            class="d-flex justify-content-center align-items-center index-teaser-circle bg-orange me-2">
+            <a href="" class="text-decoration-none">
+              <img src="../images/Specification_gematik.png" alt="Piktogramm_Spec"
+                   class="teaser-pictogram"/>
+            </a>
+        </span>
+
+        <span class="teaser-text">
+          <a href="" class="text-decoration-none">
+            <h3 class="teaser-heading bg-orange-after fw-bolder mb-3">Specifications</h3>
+          </a>
+           Implementation guides, FHIR shorthand specifications, schemas for XML, SOAP and REST communications.
+        </span>
+      </div>
+
+      <!-- Table of Contents-->
+
+      <ul class="nav nav-pills justify-content-center my-5" id="toc-tabs" role="tablist">
+        <li class="nav-item bg-orange fw-bold rounded-pill me-5 mb-3" role="presentation">
+          <button class="nav-link active" id="isik-tab" data-bs-toggle="tab" data-bs-target="#isik"
+                  type="button" role="tab" aria-controls="isik" aria-selected="true">ISiK/ISiP
+          </button>
+        </li>
+        <li class="nav-item bg-orange fw-bold rounded-pill me-5 mb-3" role="presentation">
+          <button class="nav-link btn-block" id="ePA-tab" data-bs-toggle="tab" data-bs-target="#ePA"
+                  type="button" role="tab" aria-controls="ePA" aria-selected="false">ePA
+          </button>
+        </li>
+        <li class="nav-item bg-orange fw-bold rounded-pill me-5 mb-3" role="presentation">
+          <button class="nav-link px-2" id="eRezept-tab" data-bs-toggle="tab" data-bs-target="#eRezept"
+                  type="button" role="tab" aria-controls="contact" aria-selected="false">E-Rezept
+          </button>
+        </li>
+        <li class="nav-item bg-orange fw-bold rounded-pill mb-3 me-5" role="presentation">
+          <button class="nav-link" id="misc-tab" data-bs-toggle="tab" data-bs-target="#misc"
+                  type="button" role="tab" aria-controls="misc" aria-selected="false">Miscellaneous
+          </button>
+        </li>
+      </ul>
+
+      <!--          Unterseiten Start-->
+      <div>
+        <section class="content-line content-line--1 pb-5 tab-content w-100">
+          <!--isik/isip-->
+          <div class="tab-pane fade show active" id="isik" role="tabpanel" aria-labelledby="isik-tab">
+            <div class="teaser-text my-4">
+              <a>
+                <h3 class="teaser-heading bg-orange-after">
+                  ISiK/ISiP</h3>
+              </a>
+              <br>
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/spec-ISiK-Basismodul">
+                <h5 class="teaser-heading">
+                  spec-ISiK-Basismodul</h5>
+              </a>
+              The Information Technology Systems in Hospitals (ISiK – Informationstechnische Systeme
+              in Krankenhäusern) "Basic Module" enables use-case-independent functionalities for the
+              communication and validation of data within hospital environments, by providing FHIR
+              resources, examples and an implementation guide.
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/spec-ISiK-Dokumentenaustausch">
+                <h5 class="teaser-heading">
+                  spec-ISiK-Dokumentenaustausch</h5>
+              </a>
+              The ISiK module "Document Exchange" (Dokumentenaustausch) provides FHIR resources as a
+              specification, examples and an implementation guide. Theses resources enable newly
+              created documents (e.g., forms filled out on a tablet; image documentation created using
+              a smartphone app; findings documentation written on web-based clients; documents scanned
+              with a smartphone camera; etc.) to be managed in clinical document management systems.
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/spec-ISiK-Medikation">
+                <h5 class="teaser-heading">
+                  spec-ISiK-Medikation</h5>
+              </a>
+              The ISiK module "Medication" enables data integration through structured communication
+              options based on a RESTful API for the exchange of medication information ("Medication
+              Plan") as well as prescription and administration data.
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/spec-ISiK-Sicherheit">
+                <h5 class="teaser-heading">
+                  spec-ISiK-Sicherheit</h5>
+              </a>
+              The ISiK module "Security" (Sicherheit) provides FHIR resources as a specification and
+              an implementation guide. The security module includes two use cases that allow
+              authentication and authorization of different actors within the hospital so that secured
+              data can be read from or stored in an ISiK FHIR endpoint.
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/spec-ISiK-Terminplanung">
+                <h5 class="teaser-heading">
+                  spec-ISiK-Terminplanung</h5>
+              </a>
+              The ISiK module "Appointment Scheduling" (Terminplanung) provides FHIR resources as a
+              specification, examples and an implementation guide. The resources allow the following
+              task processing: Retrieval of images of available partial and full inpatient treatment
+              services by a hospital, query of appointments and availabilities, booking management of
+              available appointments, notifications of appointment changes as well as creation of a
+              new patient in the appointment-keeping system (transmission of patient/insurance
+              information).
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/spec-ISiK-Vitalparameter-und-Koerpermasze">
+                <h5 class="teaser-heading">
+                  spec-ISiK-Vitalparameter-und-Koerpermasze</h5>
+              </a>
+              The ISiK module "Vital signs and body measurements" (Vitalzeichen und Körpermaße)
+              provides FHIR resources as a specification, examples and an implementation guide. The
+              FHIR resources can be used for structured, REST-based exchange of vital signs in
+              hospital environments.
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/spec-ISiP">
+                <h5 class="teaser-heading">
+                  spec-ISiP</h5>
+              </a>
+              FHIR resources for information technology systems in nursing care (ISiP –
+              Informationstechnische Systeme in der pflegerischen Versorgung) are determined through
+              the affirmative action process of the same name. Through ISiP, open and standardized
+              interfaces are defined for the interoperable exchange of health data in care.
+            </div>
+          </div>
+
+          <!--epa-->
+          <div class="tab-pane fade" id="ePA" role="tabpanel" aria-labelledby="ePA-tab">
+            <div class="teaser-text my-4">
+              <a>
+                <h3 class="teaser-heading bg-orange-after">
+                  ePA</h3>
+              </a>
+              <br>
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/api-ePA">
+                <h5 class="teaser-heading">
+                  api-ePA</h5>
+              </a>
+              Resources for electronic health record
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/api-ePA-Testtreiber">
+                <h5 class="teaser-heading">api-ePA-Testtreiber</h5>
+              </a>
+              REST Interface for a Test-App for the ePA-FdV
+            </div>
+          </div>
+
+          <!--e-rezept-->
+          <div class="tab-pane fade" id="eRezept" role="tabpanel" aria-labelledby="eRezept-tab">
+            <div class="teaser-text my-4">
+              <a>
+                <h3 class="teaser-heading bg-orange-after">
+                  E-Rezept</h3>
+              </a>
+              <br>
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/api-erp">
+                <h5 class="teaser-heading">
+                  api-erp</h5>
+              </a>
+              gematik is breaking new ground and would like to present the use of the interfaces
+              around the e-prescription in this way. The description of this API supplements the
+              normative documents of gematik as well as the specifications about the e-prescription
+              profiles of the FHIR standard used.
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/spec-E-Rezept-ServiceRequest">
+                <h5 class="teaser-heading">spec-E-Rezept-ServiceRequest</h5>
+              </a>
+              The e-prescription request concept is intended to demonstrate a way of sending and
+              receiving messages in the context of the e-prescription in a decentralized manner
+              between the participants. The messages are strongly structured and prepared in FHIR
+              bundles.
+            </div>
+          </div>
+
+          <!--miscellaneous-->
+          <div class="tab-pane fade" id="misc" role="tabpanel" aria-labelledby="misc-tab">
+            <div class="teaser-text my-4">
+              <a>
+                <h3 class="teaser-heading bg-orange-after">
+                  Miscellaneous</h3>
+              </a>
+              <br>
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/api-kim">
+                <h5 class="teaser-heading">
+                  api-kim</h5>
+              </a>
+              API specification for gematik's KIM - a secure Email standard, which enables the
+              exchange of information and payload in the German healthcare sector.
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/api-telematik">
+                <h5 class="teaser-heading">api-telematik</h5>
+              </a>
+              Collection of TI-Konnektor related interfaces
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/api-ti-messenger">
+                <h5 class="teaser-heading">api-ti-messenger</h5>
+              </a>
+              API specification for gematik's TI-Messenger - a messaging standard, which will enable
+              healthcare personnel in the German healthcare sector to communicate interoperable via
+              DSGVO-conform messaging-services. The TI-Messenger builds on matrix, the open standard
+              for interoperable, decentralised, real-time communication over IP.
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/api-vzd">
+                <h5 class="teaser-heading">api-vzd</h5>
+              </a>
+              API specification for gematik Directory, a service which provides Information about
+              organizations and practitioners in the german healthcare.
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/NCPeH-Simulation-API">
+                <h5 class="teaser-heading">NCPeH-Simulation-API</h5>
+              </a>
+              API specification for the testdriver interface of an NCPeH simulation. The purpose of
+              the API is to provide a defined interface for testsuites to trigger actions at the
+              simulation and receive the contents of the resulting communication between simulation
+              and NCPeH service.
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/spec-VSDM-Ersatzbescheinigung">
+                <h5 class="teaser-heading">spec-VSDM-Ersatzbescheinigung</h5>
+              </a>
+              This repo contains all the FHIR short hand files for profiling the VSDM
+              Ersatzbescheinigung Resources to be published on
+              www.simplifier.net/VSDM-Ersatzbescheinigung
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <!--          Unterseiten Ende-->
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<script>
+  $(document).ready(
+      function () {
+        $("#head").load("../common/head.html");
+        $("#header").load("../common/header.html");
+        $("#footer").load("../common/footer.html");
+      }
+  )
+</script>
+</body>
+</html>
