@@ -1,0 +1,218 @@
+<!--Copyright 2023 gematik GmbH-->
+
+<!--Licensed under the Apache License, Version 2.0 (the "License");-->
+<!--you may not use this file except in compliance with the License.-->
+<!--You may obtain a copy of the License at-->
+
+<!--http://www.apache.org/licenses/LICENSE-2.0-->
+
+<!--Unless required by applicable law or agreed to in writing, software-->
+<!--distributed under the License is distributed on an "AS IS" BASIS,-->
+<!--WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.-->
+<!--See the License for the specific language governing permissions and-->
+<!--limitations under the License.-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head id="head">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+</head>
+
+<body class="is-preload">
+<!-- Wrapper -->
+<div id="wrapper">
+  <!-- Header -->
+  <header id="header"></header>
+
+  <div class="container d-flex flex-column align-items-center pt-5">
+    <!-- Main -->
+
+
+    <div class="w-100">
+      <div class="d-flex">
+        <span
+            class="d-flex justify-content-center align-items-center index-teaser-circle bg-lightgreen me-2">
+          <img src="../images/Other_Libraries_Blau_gematik.png" alt="Piktogramm_Libs"
+               class="teaser-pictogram"/>
+        </span>
+
+        <span class="teaser-text">
+          <a href="Miscellaneous.html" class="text-decoration-none">
+            <h3 class="teaser-heading bg-lightgreen-after fw-bolder mb-3">Miscellaneous</h3>
+          </a>
+            Utility libraries or applications which do not fit in a special subgroup.
+        </span>
+      </div>
+
+
+      <ul class="nav nav-pills justify-content-center my-5" id="toc-tabs" role="tablist">
+        <li class="nav-item bg-lightgreen fw-bold rounded-pill me-5 mb-3" role="presentation">
+          <button class="nav-link active" id="blog-tab" data-bs-toggle="tab"
+                  data-bs-target="#blog"
+                  type="button" role="tab" aria-controls="blog" aria-selected="true">Blogs
+          </button>
+        </li>
+        <li class="nav-item bg-lightgreen fw-bold rounded-pill me-5 mb-3" role="presentation">
+          <button class="nav-link" id="fhir-tab" data-bs-toggle="tab"
+                  data-bs-target="#fhir"
+                  type="button" role="tab" aria-controls="fhir" aria-selected="false">FHIR
+          </button>
+        </li>
+        <li class="nav-item bg-lightgreen fw-bold rounded-pill me-5 mb-3" role="presentation">
+          <button class="nav-link" id="leftover-tab" data-bs-toggle="tab"
+                  data-bs-target="#leftover"
+                  type="button" role="tab" aria-controls="leftover" aria-selected="false">Leftovers
+          </button>
+        </li>
+      </ul>
+
+      <!--          Unterseiten Start-->
+      <div>
+        <section class="content-line content-line--1 pb-5 tab-content w-100">
+          <!-- blogs -->
+          <div class="tab-pane fade show active" id="blog" role="tabpanel"
+               aria-labelledby="blog-tab">
+            <div class="teaser-text my-4">
+              <a>
+                <h3 class="teaser-heading bg-lightgreen-after">
+                  Blogs</h3>
+              </a>
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/techblog">
+                <h5 class="teaser-heading">
+                  techblog</h5>
+              </a>
+              Software Development tech blog
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/gematik.github.io">
+                <h5 class="teaser-heading">
+                  gematik.github.io</h5>
+              </a>
+              Gematik Github.Io Page
+            </div>
+          </div>
+
+          <!-- fhir -->
+          <div class="tab-pane fade" id="fhir" role="tabpanel"
+               aria-labelledby="blog-tab">
+            <div class="teaser-text my-4">
+              <a>
+                <h3 class="teaser-heading bg-lightgreen-after">
+                  FHIR</h3>
+              </a>
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/codfsh">
+                <h5 class="teaser-heading">
+                  codfsh</h5>
+              </a>
+              codfsh is a VS Code Extension to support compilation and validation of FHIR profile definitions. Short Hand files (.fsh) can be compiled and validated easily with Sushi and HAPI validator
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/fhir-profiles-erp">
+                <h5 class="teaser-heading">
+                  fhir-profiles-erp </h5>
+              </a>
+              This Repo contains the fsh files to the published E-Rezept Worklow files on https://simplifier.net/erezept-workflow and a script to validate them.
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/fhir-profiles-erpchrg">
+                <h5 class="teaser-heading">
+                  fhir-profiles-erpchrg </h5>
+              </a>
+              This Repo contains the fsh files to the published E-Rezept charge item files on https://simplifier.net/erezept-abrechnungsinformationen and a script to validate them.
+            </div>
+          </div>
+          <!-- leftovers -->
+          <div class="tab-pane fade" id="leftover" role="tabpanel"
+               aria-labelledby="blog-tab">
+            <div class="teaser-text my-4">
+              <a>
+                <h3 class="teaser-heading bg-lightgreen-after">
+                  Leftovers</h3>
+              </a>
+              <div class="teaser-text my-4">
+                <a class="text-decoration-none"
+                   href="https://github.com/gematik/ASN1Kit">
+                  <h5 class="teaser-heading">
+                    ASN1Kit</h5>
+                </a>
+                ASN.1 Encoder\Decoder for Swift
+              </div>
+              <div class="teaser-text my-4">
+                <a class="text-decoration-none"
+                   href="https://github.com/gematik/examples-TelematikInterfaces">
+                  <h5 class="teaser-heading">
+                    examples-TelematikInterfaces</h5>
+                </a>
+                Examples of requests that can be submitted to the connector interfaces and explanations for the implementation of the special signature for the TSL on the Internet.
+              </div>
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/documentationGradlePlugins">
+                <h5 class="teaser-heading">
+                  documentationGradlePlugins</h5>
+              </a>
+              This Plugin supports easy documentation in AsciiDoc format and also JavaDoc in AsciiDoc format.
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/Gematik-KK-iOS">
+                <h5 class="teaser-heading">
+                  Gematik-KK-iOS</h5>
+              </a>
+              tba
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/gradlePlugins">
+                <h5 class="teaser-heading">
+                  gradlePlugins</h5>
+              </a>
+              Contains the Gematik Parent Settings for Version handling
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/kim-attachment-service">
+                <h5 class="teaser-heading">
+                  kim-attachment-service</h5>
+              </a>
+              tba
+            </div>
+            <div class="teaser-text my-4">
+              <a class="text-decoration-none"
+                 href="https://github.com/gematik/OpenSSL-Swift">
+                <h5 class="teaser-heading">
+                  OpenSSL-Swift</h5>
+              </a>
+              Swift extension wrapper for gematik specific crypto operations with embedded OpenSSL
+            </div>
+          </div>
+          <!--          Unterseiten Ende-->
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<script>
+  $(document).ready(
+      function () {
+        $("#head").load("../common/head.html");
+        $("#header").load("../common/header.html");
+        $("#footer").load("../common/footer.html");
+      }
+  )
+</script>
+</body>
+</html>
