@@ -18,11 +18,23 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
+  <link rel="preload" href="https://code.jquery.com/jquery-3.5.0.js" as="script">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <link rel="preload" href="../bootstrap/js/bootstrap.bundle.min.js" as="script">
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="preload" href="../bootstrap/css/bootstrap.css" as="style">
+  <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+
 </head>
-<body class="is-preload">
+<body>
 <!-- Wrapper -->
 <div id="wrapper">
   <!-- Header -->
+  <header id="header">
+  </header>
+
   <div class="container">
     <div class="text-center">
       <span class="title-text">
@@ -36,13 +48,13 @@
       <div class="col-12 col-md-6">
         <div class="row justify-content-center p-3">
           <div
-              class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-lightgreyblue">
+              class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-lightblue">
             <img src="../images/Proof_of_concepts_Blau_gematik.png" alt="Piktogramm_PoC"
                  class="teaser-pictogram"/>
           </div>
           <div class="col-12 col-md-6 teaser-text">
             <a href="Proof_Of_Concepts.html" class="text-decoration-none">
-              <h3 class="teaser-heading bg-lightgreyblue-after fw-bolder mb-3">Proof Of
+              <h3 class="teaser-heading bg-lightblue-after fw-bolder mb-3">Proof Of
                 Concepts</h3>
             </a>
             <span>
@@ -55,13 +67,13 @@
       <div class="col-12 col-md-6">
         <div class="row justify-content-center p-3">
           <div
-              class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-orange">
+              class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-yellow">
             <img src="../images/Specification_gematik.png" alt="Piktogramm_Spec"
                  class="teaser-pictogram"/>
           </div>
           <div class="col-12 col-md-6 teaser-text">
             <a href="Specifications.html" class="text-decoration-none">
-              <h3 class="teaser-heading bg-orange-after fw-bolder mb-3">Specifications</h3>
+              <h3 class="teaser-heading bg-yellow-after fw-bolder mb-3">Specifications</h3>
             </a>
             <span>
             Implementation guides, FHIR shorthand specifications, schemas for XML, SOAP and REST communications.
@@ -73,13 +85,13 @@
       <div class="col-12 col-md-6">
         <div class="row justify-content-center p-3">
           <div
-              class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-green">
+              class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-neongreen">
             <img src="../images/Mobile Applications_Blau_gematik.png" alt="Piktogramm_Apps"
                  class="teaser-pictogram"/>
           </div>
           <div class="col-12 col-md-6 teaser-text">
             <a href="Applications.html" class="text-decoration-none">
-              <h3 class="teaser-heading bg-green-after fw-bolder mb-3">Applications</h3>
+              <h3 class="teaser-heading bg-neongreen-after fw-bolder mb-3">Applications</h3>
             </a>
             <span>
             Some of our own products, used nationwide or just in house.
@@ -91,13 +103,13 @@
       <div class="col-12 col-md-6">
         <div class="row justify-content-center p-3">
           <div
-              class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-greyblue">
+              class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-lightblue">
             <img src="../images/Testtool_Blau_gematik.png" alt="Piktogramm_TstTls"
                  class="teaser-pictogram"/>
           </div>
           <div class="col-12 col-md-6 teaser-text">
             <a href="Testtools.html" class="text-decoration-none">
-              <h3 class="teaser-heading bg-greyblue-after fw-bolder mb-3">Testtools</h3>
+              <h3 class="teaser-heading bg-lightblue-after fw-bolder mb-3">Testtools</h3>
             </a>
             <span>
             Applications, libaries or test suites which can be used for to support independent testing or as support.
@@ -109,13 +121,13 @@
       <div class="col-12 col-md-6">
         <div class="row justify-content-center p-3">
           <div
-              class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-blue">
+              class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-yellow">
             <img src="../images/Reference_implementation_Blau_gematik.png" alt="Piktogramm_RefImpl"
                  class="teaser-pictogram"/>
           </div>
           <div class="col-12 col-md-6 teaser-text">
             <a href="Reference_Implementations.html" class="text-decoration-none">
-              <h3 class="teaser-heading bg-blue-after fw-bolder mb-3">Reference Implementations</h3>
+              <h3 class="teaser-heading bg-yellow-after fw-bolder mb-3">Reference Implementations</h3>
             </a>
             <span>
             Sample implementations of our corresponding specifications or parts thereof.
@@ -127,13 +139,13 @@
       <div class="col-12 col-md-6">
         <div class="row justify-content-center p-3">
           <div
-              class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-lightgreen">
+              class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-neongreen">
             <img src="../images/Other_Libraries_Blau_gematik.png" alt="Piktogramm_Libs"
                  class="teaser-pictogram"/>
           </div>
           <div class="col-12 col-md-6 teaser-text">
             <a href="Miscellaneous.html" class="text-decoration-none">
-              <h3 class="teaser-heading bg-lightgreen-after fw-bolder mb-3">Miscellaneous</h3>
+              <h3 class="teaser-heading bg-neongreen-after fw-bolder mb-3">Miscellaneous</h3>
             </a>
             <span>
             Utility libraries or applications which do not fit in a special subgroup.
@@ -144,20 +156,14 @@
     </div>
   </div>
 
-  <!-- Main -->
-  <header id="header">
-  </header>
-
   <footer id="footer"></footer>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-
 <script>
-  $(function () {
+  document.addEventListener("DOMContentLoaded", function() {
+    $("#head").load("../common/head.html");
     $("#header").load("../common/header.html");
     $("#footer").load("../common/footer.html");
-    $("#head").load("../common/head.html");
   });
 </script>
 </body>

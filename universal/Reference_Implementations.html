@@ -17,9 +17,18 @@
 <head id="head">
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+  <link rel="preload" href="https://code.jquery.com/jquery-3.5.0.js" as="script">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+  <link rel="preload" href="../bootstrap/js/bootstrap.bundle.min.js" as="script">
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="preload" href="../bootstrap/css/bootstrap.css" as="style">
+  <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
 </head>
 
-<body class="is-preload">
+<body>
 <!-- Wrapper -->
 <div id="wrapper">
   <!-- Header -->
@@ -32,14 +41,14 @@
     <div class="w-100">
       <div class="d-flex">
         <span
-            class="d-flex justify-content-center align-items-center index-teaser-circle bg-blue me-2">
+            class="d-flex justify-content-center align-items-center index-teaser-circle bg-yellow me-2">
           <img src="../images/Reference_implementation_Blau_gematik.png" alt="Piktogramm_RefImpl"
                class="teaser-pictogram"/>
         </span>
 
         <span class="teaser-text">
           <a href="Reference_Implementations.html" class="text-decoration-none">
-            <h3 class="teaser-heading bg-blue-after fw-bolder mb-3">Reference Implementations</h3>
+            <h3 class="teaser-heading bg-yellow-after fw-bolder mb-3">Reference Implementations</h3>
           </a>
            Sample implementations of our corresponding specifications or parts thereof.
         </span>
@@ -48,13 +57,13 @@
       <!-- Table of Contents-->
 
       <ul class="nav nav-pills justify-content-center my-5" id="toc-tabs" role="tablist">
-        <li class="nav-item bg-blue fw-bold rounded-pill me-5 mb-3" role="presentation">
+        <li class="nav-item bg-yellow fw-bold rounded-pill me-5 mb-3" role="presentation">
           <button class="nav-link active btn-block" id="ePA-tab" data-bs-toggle="tab"
                   data-bs-target="#ePA"
                   type="button" role="tab" aria-controls="ePA" aria-selected="false">ePA
           </button>
         </li>
-        <li class="nav-item bg-blue fw-bold rounded-pill mb-3 me-5" role="presentation">
+        <li class="nav-item bg-yellow fw-bold rounded-pill mb-3 me-5" role="presentation">
           <button class="nav-link" id="misc-tab" data-bs-toggle="tab" data-bs-target="#misc"
                   type="button" role="tab" aria-controls="misc" aria-selected="false">Miscellaneous
           </button>
@@ -69,7 +78,7 @@
           <div class="tab-pane fade show active" id="ePA" role="tabpanel" aria-labelledby="ePA-tab">
             <div class="teaser-text my-4">
               <a>
-                <h3 class="teaser-heading bg-blue-after">
+                <h3 class="teaser-heading bg-yellow-after">
                   ePA</h3>
               </a>
               <a class="text-decoration-none"
@@ -111,7 +120,7 @@
           <div class="tab-pane fade" id="misc" role="tabpanel" aria-labelledby="misc-tab">
             <div class="teaser-text my-4">
               <a>
-                <h3 class="teaser-heading bg-blue-after">
+                <h3 class="teaser-heading bg-yellow-after">
                   Miscellaneous</h3>
               </a>
               <a class="text-decoration-none"
@@ -179,17 +188,12 @@
 <footer id="footer">
 </footer>
 
-
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-
 <script>
-  $(document).ready(
-      function () {
-        $("#head").load("../common/head.html");
-        $("#header").load("../common/header.html");
-        $("#footer").load("../common/footer.html");
-      }
-  )
+  document.addEventListener("DOMContentLoaded", function() {
+    $("#head").load("../common/head.html");
+    $("#header").load("../common/header.html");
+    $("#footer").load("../common/footer.html");
+  });
 </script>
 </body>
 </html>
