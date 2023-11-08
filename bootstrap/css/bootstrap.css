@@ -12,6 +12,8 @@
   --darkblue: #000e52;
   --neongreen: #00ff64;
   --lightblue: #4affff;
+  --yellow: #efec01;
+  --neonpink: #ff1b7c;
   /*Gematik Sekundärfarben ohne Abstufungen*/
   --blue: #225494;
   --greyblue: #42659f;
@@ -595,6 +597,7 @@ footer .socials a {
 
 footer .socials a img {
   max-height: 24px;
+  min-height: 24px;
   max-width: 100%;
 }
 
@@ -7530,6 +7533,22 @@ textarea.form-control-lg {
   background-image: var(--bs-gradient) !important;
 }
 
+.bg-yellow {
+  background: var(--yellow);
+}
+
+.bg-neongreen {
+  background: var(--neongreen);
+}
+
+.bg-neonpink {
+  background: var(--neonpink);
+}
+
+.bg-lightblue {
+  background: var(--lightblue);
+}
+
 .bg-orange {
   background: var(--orange);
 }
@@ -7552,6 +7571,22 @@ textarea.form-control-lg {
 
 .bg-lightgreen {
   background: var(--lightgreen);
+}
+
+.bg-yellow-after::after {
+  background: var(--yellow);
+}
+
+.bg-neongreen-after::after {
+  background: var(--neongreen);
+}
+
+.bg-neonpink-after::after {
+  background: var(--neonpink);
+}
+
+.bg-lightblue-after::after {
+  background: var(--lightblue);
 }
 
 .bg-orange-after::after {
