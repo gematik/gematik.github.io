@@ -22,7 +22,7 @@ This is our gematik GitHub startpage.
 See [ReleaseNotes.md](./ReleaseNotes.md) for all information regarding the (newest) releases.
 
 ## License
-Copyright 2023 gematik GmbH
+Copyright 2024 gematik GmbH
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
 

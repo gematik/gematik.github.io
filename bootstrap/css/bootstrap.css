@@ -11030,6 +11030,10 @@ textarea.form-control-lg {
   border-radius: 85px;
 }
 
+.teaser:hover {
+  filter: saturate(0.5);
+}
+
 .teaser-text{
   margin-top: 1rem;
   margin-left: 0.5rem;

@@ -1,19 +1,5 @@
-<!--Copyright 2024 gematik GmbH-->
-
-<!--Licensed under the Apache License, Version 2.0 (the "License");-->
-<!--you may not use this file except in compliance with the License.-->
-<!--You may obtain a copy of the License at-->
-
-<!--http://www.apache.org/licenses/LICENSE-2.0-->
-
-<!--Unless required by applicable law or agreed to in writing, software-->
-<!--distributed under the License is distributed on an "AS IS" BASIS,-->
-<!--WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.-->
-<!--See the License for the specific language governing permissions and-->
-<!--limitations under the License.-->
-
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
@@ -93,11 +79,8 @@
   <link rel="preload" href="../bootstrap/css/bootstrap.css" as="style">
   <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
 </head>
-<body>
-<!-- Wrapper -->
-<div id="wrapper">
-  <!-- Header -->
-  <header>
+
+<header>
   <nav class="navbar fixed-top navbar-light bg-white shadow-nav" >
     <div class="container-fluid p-1">
 
@@ -138,86 +121,106 @@
     </div>
   </nav>
 </header>
+<body>
 
-  <div class="container">
-    <div class="text-center">
-      <span class="title-text">
-        <p>Support for development of medical applications in context of telematics infrastructure.</p>
-      </span>
-    </div>
+<div class="container d-flex flex-column align-items-center pt-5">
+
+  <!-- Main -->
+  <div class="w-100">
+      <a href="testingTools.html" class="text-decoration-none link-dark p-3 row teaser">
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-lightblue">
+          <img src="../images/pictograms/Testtool_Blau_gematik.png" alt="Piktogramm Testing Tools" class="teaser-pictogram"/>
+        </div>
+        <div class="col-12 col-md-6 teaser-text">
+          <h3 class="teaser-heading fw-bolder mb-3 bg-lightblue-after">Testing Tools</h3>
+          <span>Applications, libaries or test suites which can be used for to support independent testing or as support.</span>
+        </div>
+      </a>
+
+  <!-- Table of Contents-->
+  <ul class="nav nav-pills justify-content-center my-5" id="toc-tabs" role="tablist">
+    
+    
+    
+    
+    
+    
+    
+    <li class="nav-item fw-bold rounded-pill me-5 mb-3 bg-lightblue" role="presentation">
+      <button class="nav-link px-2" id="Testsuites-tab" data-bs-toggle="tab"
+              data-bs-target="#Testsuites"
+              type="button" role="tab" aria-controls="contact" aria-selected="false">Testsuites</button>
+    </li>
+    <li class="nav-item fw-bold rounded-pill me-5 mb-3 bg-lightblue" role="presentation">
+      <button class="nav-link px-2" id="Other-tab" data-bs-toggle="tab"
+              data-bs-target="#Other"
+              type="button" role="tab" aria-controls="contact" aria-selected="false">Other</button>
+    </li>
+  </ul>
 
 
-    <div class="row w-100">
-      <div class="col-12 col-md-6">
-        <a href="proofofconcepts.html" class="text-decoration-none link-dark p-3 row teaser">
-          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-lightblue">
-            <img src="../images/pictograms/Proof_of_concepts_Blau_gematik.png" alt="Piktogramm Proof Of Concepts" class="teaser-pictogram"/>
-          </div>
-          <div class="col-12 col-md-6 teaser-text">
-            <h3 class="teaser-heading fw-bolder mb-3 bg-lightblue-after">Proof Of Concepts</h3>
-            <span>Small realizations of certain methods or ideas in order to demonstrate its feasibility.</span>
-          </div>
+  <!--          Unterseiten Start-->
+  <div>
+    <section class="content-line content-line--1 pb-5 tab-content w-100">
+      
+      
+      
+      
+      
+      
+      
+      <div class="tab-pane fade"
+           id="Testsuites"
+           role="tabpanel" aria-labelledby="Testsuites-tab">
+        <a>
+          <h3 class="teaser-heading bg-lightblue-after">Testsuites</h3>
         </a>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/TI-Messenger-Testsuite">
+            <h5 class="teaser-heading">TI-Messenger-Testsuite</h5>
+          </a>
+          <span>This Project contains the testsuite  for the TI-Messenger. It tests multiple TI-Messenger instances against each other for interoperability.</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/app-PkiTestsuite">
+            <h5 class="teaser-heading">app-PkiTestsuite</h5>
+          </a>
+          <span>PKI Testsuite to test products of the telematic infrastructure to fulfill the gemSpec_PKI specification. This test suite is used for approval tests of different products like VSDM Fachdienst, KIM Fachdienst, VPN Zugangsdienst, Intermediär, etc.</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/app-FedIdpTestsuite">
+            <h5 class="teaser-heading">app-FedIdpTestsuite</h5>
+          </a>
+          <span>Testsuite to test Federation Master of IDP federation</span>
+        </div>
       </div>
-      <div class="col-12 col-md-6">
-        <a href="specifications.html" class="text-decoration-none link-dark p-3 row teaser">
-          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-yellow">
-            <img src="../images/pictograms/Specification_gematik.png" alt="Piktogramm Specifications" class="teaser-pictogram"/>
-          </div>
-          <div class="col-12 col-md-6 teaser-text">
-            <h3 class="teaser-heading fw-bolder mb-3 bg-yellow-after">Specifications</h3>
-            <span>Implementation guides, FHIR shorthand specifications, schemas for XML, SOAP and REST communications.</span>
-          </div>
+      <div class="tab-pane fade"
+           id="Other"
+           role="tabpanel" aria-labelledby="Other-tab">
+        <a>
+          <h3 class="teaser-heading bg-lightblue-after">Other</h3>
         </a>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/cucumber-test-combinations-maven-plugin">
+            <h5 class="teaser-heading">cucumber-test-combinations-maven-plugin</h5>
+          </a>
+          <span>This plugin fills empty examples tables in cucumber feature files with combinations of predefined values. The generated combinations can be configured by various filters.</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/app-gemSekIdp">
+            <h5 class="teaser-heading">app-gemSekIdp</h5>
+          </a>
+          <span>&quot;gematik sektoraler IDP&quot; and Testsuite to test any &quot;Sektoraler IDP&quot; as part of the IDP federation</span>
+        </div>
       </div>
-      <div class="col-12 col-md-6">
-        <a href="applications.html" class="text-decoration-none link-dark p-3 row teaser">
-          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-neongreen">
-            <img src="../images/pictograms/Mobile Applications_Blau_gematik.png" alt="Piktogramm Applications" class="teaser-pictogram"/>
-          </div>
-          <div class="col-12 col-md-6 teaser-text">
-            <h3 class="teaser-heading fw-bolder mb-3 bg-neongreen-after">Applications</h3>
-            <span>Some of our own products, used nationwide or just in house.</span>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6">
-        <a href="testingTools.html" class="text-decoration-none link-dark p-3 row teaser">
-          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-lightblue">
-            <img src="../images/pictograms/Testtool_Blau_gematik.png" alt="Piktogramm Testing Tools" class="teaser-pictogram"/>
-          </div>
-          <div class="col-12 col-md-6 teaser-text">
-            <h3 class="teaser-heading fw-bolder mb-3 bg-lightblue-after">Testing Tools</h3>
-            <span>Applications, libaries or test suites which can be used for to support independent testing or as support.</span>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6">
-        <a href="referenceImplementations.html" class="text-decoration-none link-dark p-3 row teaser">
-          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-yellow">
-            <img src="../images/pictograms/Reference_implementation_Blau_gematik.png" alt="Piktogramm Reference Implementations" class="teaser-pictogram"/>
-          </div>
-          <div class="col-12 col-md-6 teaser-text">
-            <h3 class="teaser-heading fw-bolder mb-3 bg-yellow-after">Reference Implementations</h3>
-            <span>Sample implementations of our corresponding specifications or parts thereof. </span>
-          </div>
-        </a>
-      </div>
-      <div class="col-12 col-md-6">
-        <a href="miscellaneous.html" class="text-decoration-none link-dark p-3 row teaser">
-          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center index-teaser-circle bg-neongreen">
-            <img src="../images/pictograms/Other_Libraries_Blau_gematik.png" alt="Piktogramm Miscellaneous" class="teaser-pictogram"/>
-          </div>
-          <div class="col-12 col-md-6 teaser-text">
-            <h3 class="teaser-heading fw-bolder mb-3 bg-neongreen-after">Miscellaneous</h3>
-            <span>Utility libraries or applications which do not fit in a special subgroup.</span>
-          </div>
-        </a>
-      </div>
-    </div>
+    </section>
   </div>
+  <!--          Unterseiten Ende-->
+</div>
+</div>
 
-  <footer>
+</body>
+<footer>
   <div class="container-fluid">
     <div class="row bg-light p-5">
 
@@ -260,7 +263,4 @@
     </div>
   </div>
 </footer>
-</div>
-
-</body>
 </html>
