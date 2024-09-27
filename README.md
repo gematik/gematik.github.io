@@ -16,3 +16,5 @@ These are licensed under the MIT (Open Source) (https://en.wikipedia.org/wiki/MI
 
 unknown Logo from https://www.iconarchive.com/show/blue-bits-icons-by-icojam/question-faq-icon.html
 These are licensed under the CC0 1.0 Universal https://creativecommons.org/publicdomain/zero/1.0/
+
+gitlab Logo from https://about.gitlab.com/press/press-kit/
