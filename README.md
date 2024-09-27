@@ -8,8 +8,11 @@ These are licensed under the Creative Commons Attribution-ShareAlike 3.0 Unporte
 blueocean Logos from https://github.com/jenkinsci/blueocean-plugin
 These are licensed under the MIT License (Copyright (c) 2016 CloudBees Inc and a number of other of contributors)
 
-warning, ok, error Logo from https://www.iconarchive.com/show/oxygen-icons-by-oxygen-icons.org/Status-dialog-warning-icon.html
+aborted, failure, success, unstable Logo from https://www.iconarchive.com/show/oxygen-icons-by-oxygen-icons.org/Status-dialog-warning-icon.html
 These are licensed under the LGPL (Open Source) (https://www.gnu.org/licenses/lgpl-3.0.html)
 
 mr, branch, main Logo from https://www.iconarchive.com/show/octicons-icons-by-github.3.html
 These are licensed under the MIT (Open Source) (https://en.wikipedia.org/wiki/MIT_License)
+
+unknown Logo from https://www.iconarchive.com/show/blue-bits-icons-by-icojam/question-faq-icon.html
+These are licensed under the CC0 1.0 Universal https://creativecommons.org/publicdomain/zero/1.0/
