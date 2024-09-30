@@ -18,3 +18,6 @@ unknown Logo from https://www.iconarchive.com/show/blue-bits-icons-by-icojam/que
 These are licensed under the CC0 1.0 Universal https://creativecommons.org/publicdomain/zero/1.0/
 
 gitlab Logo from https://about.gitlab.com/press/press-kit/
+
+packet Logo from https://www.iconarchive.com/show/shimmer-icons-by-creative-freedom/Parcel-icon.html
+These are licensed under the CC Attribution-No Derivative 4.0 (https://creativecommons.org/licenses/by-nd/4.0/) --> https://www.creativefreedom.co.uk/
