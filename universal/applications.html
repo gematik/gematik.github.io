@@ -139,10 +139,8 @@
 
   <!-- Table of Contents-->
   <ul class="nav nav-pills justify-content-center my-5" id="toc-tabs" role="tablist">
-    
-    
     <li class="nav-item fw-bold rounded-pill me-5 mb-3 bg-neongreen" role="presentation">
-      <button class="nav-link px-2" id="E-Rezept-tab" data-bs-toggle="tab"
+      <button class="nav-link px-2 active" id="E-Rezept-tab" data-bs-toggle="tab"
               data-bs-target="#E-Rezept"
               type="button" role="tab" aria-controls="contact" aria-selected="false">E-Rezept</button>
     </li>
@@ -156,24 +154,18 @@
               data-bs-target="#Authenticator"
               type="button" role="tab" aria-controls="contact" aria-selected="false">Authenticator</button>
     </li>
-    
     <li class="nav-item fw-bold rounded-pill me-5 mb-3 bg-neongreen" role="presentation">
       <button class="nav-link px-2" id="KIM-tab" data-bs-toggle="tab"
               data-bs-target="#KIM"
               type="button" role="tab" aria-controls="contact" aria-selected="false">KIM</button>
     </li>
-    
-    
-    
   </ul>
 
 
   <!--          Unterseiten Start-->
   <div>
     <section class="content-line content-line--1 pb-5 tab-content w-100">
-      
-      
-      <div class="tab-pane fade"
+      <div class="tab-pane fade show active"
            id="E-Rezept"
            role="tabpanel" aria-labelledby="E-Rezept-tab">
         <a>
@@ -216,36 +208,6 @@
           </a>
           <span>This service serves as a validation service for all notifications send to DEMIS. It uses a snapshot of all profiles and the DEMIS-Schemas Project to validate any notification.</span>
         </div>
-        <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-report-processing-service">
-            <h5 class="teaser-heading">DEMIS-report-processing-service</h5>
-          </a>
-          <span>This service serves as a central processing point for report notifications to the DEMIS core. As a central interface, other services such as the validation service are addressed, the results are bundled and transferred to the NCAPI</span>
-        </div>
-        <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-adapter">
-            <h5 class="teaser-heading">DEMIS-adapter</h5>
-          </a>
-          <span>null</span>
-        </div>
-        <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-pdfgen-service">
-            <h5 class="teaser-heading">DEMIS-pdfgen-service</h5>
-          </a>
-          <span>Service generating pdf document from a thymeleaf template for a notification receipt</span>
-        </div>
-        <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-hospital-location-service">
-            <h5 class="teaser-heading">DEMIS-hospital-location-service</h5>
-          </a>
-          <span>This service provides information for hospital location data. For any valid IK-Number it provides a list of allowed/registered/known hospitals and the addresses of those.</span>
-        </div>
-        <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-notification-gateway">
-            <h5 class="teaser-heading">DEMIS-notification-gateway</h5>
-          </a>
-          <span>Gateway service for notification-portal website to connect notification-api</span>
-        </div>
       </div>
       <div class="tab-pane fade"
            id="Authenticator"
@@ -266,7 +228,6 @@
           <span>This repository is an example Relaying Party project for testing gematik Authenticator.</span>
         </div>
       </div>
-      
       <div class="tab-pane fade"
            id="KIM"
            role="tabpanel" aria-labelledby="KIM-tab">
@@ -286,9 +247,6 @@
           <span>null</span>
         </div>
       </div>
-      
-      
-      
     </section>
   </div>
   <!--          Unterseiten Ende-->
