@@ -233,16 +233,16 @@
           <span>The web-based microfrontend Portal-BedOccupancy is part of the DEMIS Notification-Portal Microfrontends. It enables staff to deliver data about the current number of occupied and operable beds for adults and children in their hospital to fullfil the law: § 13 IfSG - Einzelnorm.</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-notification-processing-service">
-            <h5 class="teaser-heading">DEMIS-notification-processing-service</h5>
-          </a>
-          <span>This service is responsible for receiving and processing pathogen and disease notifications. It offers a FHIR compliant REST interface for this purpose exposed to the outside of demis. The logic of the individual processing steps is usually not implemented by this service itself, but is provided by other special services that are requested.</span>
-        </div>
-        <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-hospital-location-service">
             <h5 class="teaser-heading">DEMIS-hospital-location-service</h5>
           </a>
           <span>This service provides information for hospital location data. For any valid IK-Number it provides a list of allowed/registered/known hospitals and the addresses of those.</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-shell">
+            <h5 class="teaser-heading">DEMIS-portal-shell</h5>
+          </a>
+          <span>The shell is the main structue that allows for all micro applications of DEMIS Notification-Portal Microfrontends to be rendered.  It has the initial Config for SPA-Framework and an import Map mapping all micro application to their relative URL served Paths. It has the main functionality to show static pages (impressum, about Demis).</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-core">
@@ -251,10 +251,16 @@
           <span>Project that contains central components for DEMIS-Frontends.</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-shell">
-            <h5 class="teaser-heading">DEMIS-portal-shell</h5>
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-lifecycle-validation-service">
+            <h5 class="teaser-heading">DEMIS-lifecycle-validation-service</h5>
           </a>
-          <span>The shell is the main structue that allows for all micro applications of DEMIS Notification-Portal Microfrontends to be rendered.  It has the initial Config for SPA-Framework and an import Map mapping all micro application to their relative URL served Paths. It has the main functionality to show static pages (impressum, about Demis).</span>
+          <span>The Lifecycle-Validation-Service (LVS) validates the lifecycle rules of a pathogen notification</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-notification-processing-service">
+            <h5 class="teaser-heading">DEMIS-notification-processing-service</h5>
+          </a>
+          <span>This service is responsible for receiving and processing pathogen and disease notifications. It offers a FHIR compliant REST interface for this purpose exposed to the outside of demis. The logic of the individual processing steps is usually not implemented by this service itself, but is provided by other special services that are requested.</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-service-template">
@@ -279,18 +285,6 @@
             <h5 class="teaser-heading">DEMIS-notification-routing-service</h5>
           </a>
           <span>Service to provide the destination of a notification. The evaluation is based on the assignment of all addresses in Germany to a public health  department by the RKI. In principle, the IfSG is followed here, which prescribes the order in which the addresses of a notification must be used to determine the recipient of a notification.</span>
-        </div>
-        <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-lifecycle-validation-service">
-            <h5 class="teaser-heading">DEMIS-lifecycle-validation-service</h5>
-          </a>
-          <span>The Lifecycle-Validation-Service (LVS) validates the lifecycle rules of a pathogen notification</span>
-        </div>
-        <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-report-processing-service">
-            <h5 class="teaser-heading">DEMIS-report-processing-service</h5>
-          </a>
-          <span>This service serves as a central processing point for report notifications to the DEMIS core. As a central interface, other services such as the validation service are addressed, the results are bundled and transferred to the NCAPI</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-notification-gateway">
@@ -335,10 +329,10 @@
           <span>This micro service downloads all public certificates of health offices registered in the DEMIS-Keycloak from a specific certificate authorities&#39; endpoint. These certificates are then stored in a specific Key-Value-Database (in this case Redis). There is just a single certificate authority (CA) known to the service.</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-integrierte-genomische-surveillance-service">
-            <h5 class="teaser-heading">DEMIS-integrierte-genomische-surveillance-service</h5>
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-report-processing-service">
+            <h5 class="teaser-heading">DEMIS-report-processing-service</h5>
           </a>
-          <span>Integrated genomic surveillance (IGS) combines the results of modern DNA sequencing methods and genome sequence analyses in accordance with the Infection Protection Act (IfSG) and other pathogen-related data. The IGS service offers sequencing laboratories the possibility to validate and upload IGS reports with attached genome sequence data.</span>
+          <span>This service serves as a central processing point for report notifications to the DEMIS core. As a central interface, other services such as the validation service are addressed, the results are bundled and transferred to the NCAPI</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-gateway-igs">
@@ -357,6 +351,12 @@
             <h5 class="teaser-heading">DEMIS-pdfgen-service</h5>
           </a>
           <span>Service generating pdf document from a thymeleaf template for a notification receipt</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-integrierte-genomische-surveillance-service">
+            <h5 class="teaser-heading">DEMIS-integrierte-genomische-surveillance-service</h5>
+          </a>
+          <span>Integrated genomic surveillance (IGS) combines the results of modern DNA sequencing methods and genome sequence analyses in accordance with the Infection Protection Act (IfSG) and other pathogen-related data. The IGS service offers sequencing laboratories the possibility to validate and upload IGS reports with attached genome sequence data.</span>
         </div>
       </div>
       <div class="tab-pane fade"
