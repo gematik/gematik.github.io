@@ -251,16 +251,10 @@
           <span>Project that contains central components for DEMIS-Frontends.</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-hospital-location-service">
-            <h5 class="teaser-heading">DEMIS-hospital-location-service</h5>
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-report-processing-service">
+            <h5 class="teaser-heading">DEMIS-report-processing-service</h5>
           </a>
-          <span>This service provides information for hospital location data. For any valid IK-Number it provides a list of allowed/registered/known hospitals and the addresses of those.</span>
-        </div>
-        <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-service-template">
-            <h5 class="teaser-heading">DEMIS-service-template</h5>
-          </a>
-          <span>Project-Template for new DEMIS-Services</span>
+          <span>This service serves as a central processing point for report notifications to the DEMIS core. As a central interface, other services such as the validation service are addressed, the results are bundled and transferred to the NCAPI</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-antibiotic-resistance-surveillance-service">
@@ -269,16 +263,16 @@
           <span>Service to enable laboratories and hospitals to transmit data to ARS (Antibiotic Resistance Surveillance) via their primary systems (KIS/LIS)</span>
         </div>
         <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-service-template">
+            <h5 class="teaser-heading">DEMIS-service-template</h5>
+          </a>
+          <span>Project-Template for new DEMIS-Services</span>
+        </div>
+        <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-igs">
             <h5 class="teaser-heading">DEMIS-portal-igs</h5>
           </a>
           <span>The web-based microfrontend Portal-IGS is part of the DEMIS Notification-Portal Microfrontends. It enables sequencing laboratories to interact with the IGS-Service via a dedicated gateway in a structured and guided manor.</span>
-        </div>
-        <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-report-processing-service">
-            <h5 class="teaser-heading">DEMIS-report-processing-service</h5>
-          </a>
-          <span>This service serves as a central processing point for report notifications to the DEMIS core. As a central interface, other services such as the validation service are addressed, the results are bundled and transferred to the NCAPI</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-pseudonymization-storage-service">
@@ -293,16 +287,28 @@
           <span>Service to provide the destination of a notification. The evaluation is based on the assignment of all addresses in Germany to a public health  department by the RKI. In principle, the IfSG is followed here, which prescribes the order in which the addresses of a notification must be used to determine the recipient of a notification.</span>
         </div>
         <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-hospital-location-service">
+            <h5 class="teaser-heading">DEMIS-hospital-location-service</h5>
+          </a>
+          <span>This service provides information for hospital location data. For any valid IK-Number it provides a list of allowed/registered/known hospitals and the addresses of those.</span>
+        </div>
+        <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-certificate-update-service">
             <h5 class="teaser-heading">DEMIS-certificate-update-service</h5>
           </a>
           <span>This micro service downloads all public certificates of health offices registered in the DEMIS-Keycloak from a specific certificate authorities&#39; endpoint. These certificates are then stored in a specific Key-Value-Database (in this case Redis). There is just a single certificate authority (CA) known to the service.</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-keycloak-user-purger">
-            <h5 class="teaser-heading">DEMIS-keycloak-user-purger</h5>
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-notification-gateway">
+            <h5 class="teaser-heading">DEMIS-notification-gateway</h5>
           </a>
-          <span>Project for checking all temporary users in a keycloak realm and deletes them if certain conditions occur.</span>
+          <span>Gateway service for notification-portal website to connect notification-api</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-pathogen">
+            <h5 class="teaser-heading">DEMIS-portal-pathogen</h5>
+          </a>
+          <span>The web-based microfrontend Portal-Pathogen is part of the DEMIS Notification-Portal Microfrontends. It allows staff to report notifcation category and specimen data about their patients according to the law.: §7 Abs. 1 IfSG: Meldepflichtige Nachweise von Krankheitserregern.</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-context-enrichment-service">
@@ -317,16 +323,10 @@
           <span>The web-based microfrontend Portal-Disease is part of the DEMIS Notification-Portal Microfrontends. It allows staff to report diseases according to the law.: § 6 IfSG Meldepflichtige Krankheiten.</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-notification-gateway">
-            <h5 class="teaser-heading">DEMIS-notification-gateway</h5>
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-keycloak-user-purger">
+            <h5 class="teaser-heading">DEMIS-keycloak-user-purger</h5>
           </a>
-          <span>Gateway service for notification-portal website to connect notification-api</span>
-        </div>
-        <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-pathogen">
-            <h5 class="teaser-heading">DEMIS-portal-pathogen</h5>
-          </a>
-          <span>The web-based microfrontend Portal-Pathogen is part of the DEMIS Notification-Portal Microfrontends. It allows staff to report notifcation category and specimen data about their patients according to the law.: §7 Abs. 1 IfSG: Meldepflichtige Nachweise von Krankheitserregern.</span>
+          <span>Project for checking all temporary users in a keycloak realm and deletes them if certain conditions occur.</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-lifecycle-validation-service">
