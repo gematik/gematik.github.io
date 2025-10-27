@@ -215,16 +215,16 @@
           <span>This project provides a service that enables the translation of any code that is known for DEMIS notifications and converts codes to a display value via their resource type</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-ars-pseudonymization-service">
-            <h5 class="teaser-heading">DEMIS-ars-pseudonymization-service</h5>
-          </a>
-          <span>Service for the creation of pseudonyms in the context of antibiotic resistance surveillance.</span>
-        </div>
-        <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-report-processing-service">
             <h5 class="teaser-heading">DEMIS-report-processing-service</h5>
           </a>
           <span>This service serves as a central processing point for report notifications to the DEMIS core. As a central interface, other services such as the validation service are addressed, the results are bundled and transferred to the NCAPI</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-ars-pseudonymization-service">
+            <h5 class="teaser-heading">DEMIS-ars-pseudonymization-service</h5>
+          </a>
+          <span>Service for the creation of pseudonyms in the context of antibiotic resistance surveillance.</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-core">
@@ -257,22 +257,16 @@
           <span>This Service implements the creation of new Pseudonyms for Notifications based on the Bloom filter. The generated Pseudonym is used to substitute real name, first name and date of birth of the Notification that will be send to RKI as a copy, for statistical evaluations, in some cases (e.g. §7.3, §7.4 Notifications).</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-notification-processing-service">
-            <h5 class="teaser-heading">DEMIS-notification-processing-service</h5>
-          </a>
-          <span>This service is responsible for receiving and processing pathogen and disease notifications. It offers a FHIR compliant REST interface for this purpose exposed to the outside of demis. The logic of the individual processing steps is usually not implemented by this service itself, but is provided by other special services that are requested.</span>
-        </div>
-        <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-service-template">
             <h5 class="teaser-heading">DEMIS-service-template</h5>
           </a>
           <span>Project-Template for new DEMIS-Services</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-bedoccupancy">
-            <h5 class="teaser-heading">DEMIS-portal-bedoccupancy</h5>
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-notification-processing-service">
+            <h5 class="teaser-heading">DEMIS-notification-processing-service</h5>
           </a>
-          <span>The web-based microfrontend Portal-BedOccupancy is part of the DEMIS Notification-Portal Microfrontends. It enables staff to deliver data about the current number of occupied and operable beds for adults and children in their hospital to fullfil the law: § 13 IfSG - Einzelnorm.</span>
+          <span>This service is responsible for receiving and processing pathogen and disease notifications. It offers a FHIR compliant REST interface for this purpose exposed to the outside of demis. The logic of the individual processing steps is usually not implemented by this service itself, but is provided by other special services that are requested.</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-notification-gateway">
@@ -281,16 +275,16 @@
           <span>Gateway service for notification-portal website to connect notification-api</span>
         </div>
         <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-bedoccupancy">
+            <h5 class="teaser-heading">DEMIS-portal-bedoccupancy</h5>
+          </a>
+          <span>The web-based microfrontend Portal-BedOccupancy is part of the DEMIS Notification-Portal Microfrontends. It enables staff to deliver data about the current number of occupied and operable beds for adults and children in their hospital to fullfil the law: § 13 IfSG - Einzelnorm.</span>
+        </div>
+        <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-antibiotic-resistance-surveillance-service">
             <h5 class="teaser-heading">DEMIS-antibiotic-resistance-surveillance-service</h5>
           </a>
           <span>Service to enable laboratories and hospitals to transmit data to ARS (Antibiotic Resistance Surveillance) via their primary systems (KIS/LIS)</span>
-        </div>
-        <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-lifecycle-validation-service">
-            <h5 class="teaser-heading">DEMIS-lifecycle-validation-service</h5>
-          </a>
-          <span>The Lifecycle-Validation-Service (LVS) validates the lifecycle rules of a pathogen notification</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-pseudonymization-storage-service">
@@ -303,6 +297,12 @@
             <h5 class="teaser-heading">DEMIS-notification-routing-service</h5>
           </a>
           <span>Service to provide the destination of a notification. The evaluation is based on the assignment of all addresses in Germany to a public health  department by the RKI. In principle, the IfSG is followed here, which prescribes the order in which the addresses of a notification must be used to determine the recipient of a notification.</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-lifecycle-validation-service">
+            <h5 class="teaser-heading">DEMIS-lifecycle-validation-service</h5>
+          </a>
+          <span>The Lifecycle-Validation-Service (LVS) validates the lifecycle rules of a pathogen notification</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-pathogen">
