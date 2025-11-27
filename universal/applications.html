@@ -233,16 +233,16 @@
           <span>Project that contains central components for DEMIS-Frontends.</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-hospital-location-service">
-            <h5 class="teaser-heading">DEMIS-hospital-location-service</h5>
-          </a>
-          <span>This service provides information for hospital location data. For any valid IK-Number it provides a list of allowed/registered/known hospitals and the addresses of those.</span>
-        </div>
-        <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-pseudonymization-service">
             <h5 class="teaser-heading">DEMIS-pseudonymization-service</h5>
           </a>
           <span>This Service implements the creation of new Pseudonyms for Notifications based on the Bloom filter. The generated Pseudonym is used to substitute real name, first name and date of birth of the Notification that will be send to RKI as a copy, for statistical evaluations, in some cases (e.g. §7.3, §7.4 Notifications).</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-hospital-location-service">
+            <h5 class="teaser-heading">DEMIS-hospital-location-service</h5>
+          </a>
+          <span>This service provides information for hospital location data. For any valid IK-Number it provides a list of allowed/registered/known hospitals and the addresses of those.</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-service-template">
@@ -263,16 +263,16 @@
           <span>The shell is the main structue that allows for all micro applications of DEMIS Notification-Portal Microfrontends to be rendered.  It has the initial Config for SPA-Framework and an import Map mapping all micro application to their relative URL served Paths. It has the main functionality to show static pages (impressum, about Demis).</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-notification-processing-service">
-            <h5 class="teaser-heading">DEMIS-notification-processing-service</h5>
-          </a>
-          <span>This service is responsible for receiving and processing pathogen and disease notifications. It offers a FHIR compliant REST interface for this purpose exposed to the outside of demis. The logic of the individual processing steps is usually not implemented by this service itself, but is provided by other special services that are requested.</span>
-        </div>
-        <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-bedoccupancy">
             <h5 class="teaser-heading">DEMIS-portal-bedoccupancy</h5>
           </a>
           <span>The web-based microfrontend Portal-BedOccupancy is part of the DEMIS Notification-Portal Microfrontends. It enables staff to deliver data about the current number of occupied and operable beds for adults and children in their hospital to fullfil the law: § 13 IfSG - Einzelnorm.</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-notification-processing-service">
+            <h5 class="teaser-heading">DEMIS-notification-processing-service</h5>
+          </a>
+          <span>This service is responsible for receiving and processing pathogen and disease notifications. It offers a FHIR compliant REST interface for this purpose exposed to the outside of demis. The logic of the individual processing steps is usually not implemented by this service itself, but is provided by other special services that are requested.</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-antibiotic-resistance-surveillance-service">
@@ -317,28 +317,22 @@
           <span>The Context Enrichment Service (CES) extracts information concerning the authentication and associated level of trust from the user&#39;s JWT and provides a FHIR resource to embed it into the notification by the calling services.</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-disease">
-            <h5 class="teaser-heading">DEMIS-portal-disease</h5>
-          </a>
-          <span>The web-based microfrontend Portal-Disease is part of the DEMIS Notification-Portal Microfrontends. It allows staff to report diseases according to the law.: § 6 IfSG Meldepflichtige Krankheiten.</span>
-        </div>
-        <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-keycloak-user-purger">
             <h5 class="teaser-heading">DEMIS-keycloak-user-purger</h5>
           </a>
           <span>Project for checking all temporary users in a keycloak realm and deletes them if certain conditions occur.</span>
         </div>
         <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-disease">
+            <h5 class="teaser-heading">DEMIS-portal-disease</h5>
+          </a>
+          <span>The web-based microfrontend Portal-Disease is part of the DEMIS Notification-Portal Microfrontends. It allows staff to report diseases according to the law.: § 6 IfSG Meldepflichtige Krankheiten.</span>
+        </div>
+        <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-fhir-storage-service">
             <h5 class="teaser-heading">DEMIS-fhir-storage-service</h5>
           </a>
           <span>FHIR Storage Services transparently store one or more FHIR resources, optimized for searches and queries. The deletion of expired resources is handled automatically.</span>
-        </div>
-        <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-pdfgen-service">
-            <h5 class="teaser-heading">DEMIS-pdfgen-service</h5>
-          </a>
-          <span>Service generating pdf document from a thymeleaf template for a notification receipt</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-gateway-igs">
@@ -351,6 +345,12 @@
             <h5 class="teaser-heading">DEMIS-integrierte-genomische-surveillance-service</h5>
           </a>
           <span>Integrated genomic surveillance (IGS) combines the results of modern DNA sequencing methods and genome sequence analyses in accordance with the Infection Protection Act (IfSG) and other pathogen-related data. The IGS service offers sequencing laboratories the possibility to validate and upload IGS reports with attached genome sequence data.</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-pdfgen-service">
+            <h5 class="teaser-heading">DEMIS-pdfgen-service</h5>
+          </a>
+          <span>Service generating pdf document from a thymeleaf template for a notification receipt</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-certificate-update-service">
