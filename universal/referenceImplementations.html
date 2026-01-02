@@ -140,7 +140,22 @@
   <!-- Table of Contents-->
   <ul class="nav nav-pills justify-content-center my-5" id="toc-tabs" role="tablist">
     <li class="nav-item fw-bold rounded-pill me-5 mb-3 bg-yellow" role="presentation">
-      <button class="nav-link px-2 active" id="Reference-Validator-tab" data-bs-toggle="tab"
+      <button class="nav-link px-2 active" id="ePA-tab" data-bs-toggle="tab"
+              data-bs-target="#ePA"
+              type="button" role="tab" aria-controls="contact" aria-selected="false">ePA</button>
+    </li>
+    <li class="nav-item fw-bold rounded-pill me-5 mb-3 bg-yellow" role="presentation">
+      <button class="nav-link px-2" id="E-Rezept-tab" data-bs-toggle="tab"
+              data-bs-target="#E-Rezept"
+              type="button" role="tab" aria-controls="contact" aria-selected="false">E-Rezept</button>
+    </li>
+    <li class="nav-item fw-bold rounded-pill me-5 mb-3 bg-yellow" role="presentation">
+      <button class="nav-link px-2" id="TIM-tab" data-bs-toggle="tab"
+              data-bs-target="#TIM"
+              type="button" role="tab" aria-controls="contact" aria-selected="false">TIM</button>
+    </li>
+    <li class="nav-item fw-bold rounded-pill me-5 mb-3 bg-yellow" role="presentation">
+      <button class="nav-link px-2" id="Reference-Validator-tab" data-bs-toggle="tab"
               data-bs-target="#Reference-Validator"
               type="button" role="tab" aria-controls="contact" aria-selected="false">Reference-Validator</button>
     </li>
@@ -156,6 +171,57 @@
   <div>
     <section class="content-line content-line--1 pb-5 tab-content w-100">
       <div class="tab-pane fade show active"
+           id="ePA"
+           role="tabpanel" aria-labelledby="ePA-tab">
+        <a>
+          <h3 class="teaser-heading bg-yellow-after">ePA</h3>
+        </a>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/ref-ePA-HealthRecordMigration">
+            <h5 class="teaser-heading">ref-ePA-HealthRecordMigration</h5>
+          </a>
+          <span>Reference implementation for key handling for health record migration to a different provider.</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/ref-ePA-AV-Gate">
+            <h5 class="teaser-heading">ref-ePA-AV-Gate</h5>
+          </a>
+          <span>Reference implementation of an Anti-Virus solution with proxy between primary system and Konnektor</span>
+        </div>
+      </div>
+      <div class="tab-pane fade"
+           id="E-Rezept"
+           role="tabpanel" aria-labelledby="E-Rezept-tab">
+        <a>
+          <h3 class="teaser-heading bg-yellow-after">E-Rezept</h3>
+        </a>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/ref-OpenHealthCardKit">
+            <h5 class="teaser-heading">ref-OpenHealthCardKit</h5>
+          </a>
+          <span>Controlling/Use-case framework for accessing smart cards of the telematic infrastructure. API Documentation: https://swiftpackageindex.com/gematik/ref-OpenHealthCardKit/main/documentation/healthcardaccess</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/ref-erp-client-cs">
+            <h5 class="teaser-heading">ref-erp-client-cs</h5>
+          </a>
+          <span>shows an example of how to control IDP and e-prescription specialist services from doctor and pharmacy systems in C# using the TITUS demo environment.</span>
+        </div>
+      </div>
+      <div class="tab-pane fade"
+           id="TIM"
+           role="tabpanel" aria-labelledby="TIM-tab">
+        <a>
+          <h3 class="teaser-heading bg-yellow-after">TIM</h3>
+        </a>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/TI-M-Referenzimplementierung">
+            <h5 class="teaser-heading">TI-M-Referenzimplementierung</h5>
+          </a>
+          <span>Overarching documentation of the TI-Messenger reference implementation.</span>
+        </div>
+      </div>
+      <div class="tab-pane fade"
            id="Reference-Validator"
            role="tabpanel" aria-labelledby="Reference-Validator-tab">
         <a>
