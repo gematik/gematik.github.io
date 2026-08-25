@@ -159,6 +159,11 @@
               data-bs-target="#KIM"
               type="button" role="tab" aria-controls="contact" aria-selected="false">KIM</button>
     </li>
+    <li class="nav-item fw-bold rounded-pill me-5 mb-3 bg-neongreen" role="presentation">
+      <button class="nav-link px-2" id="ZTS-tab" data-bs-toggle="tab"
+              data-bs-target="#ZTS"
+              type="button" role="tab" aria-controls="contact" aria-selected="false">ZTS</button>
+    </li>
   </ul>
 
 
@@ -227,16 +232,16 @@
           <span>GitHub Pages project for the provision/use of the DEMIS helm charts</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-hospital-location-service">
-            <h5 class="teaser-heading">DEMIS-hospital-location-service</h5>
-          </a>
-          <span>This service provides information for hospital location data. For any valid IK-Number it provides a list of allowed/registered/known hospitals and the addresses of those.</span>
-        </div>
-        <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-destination-lookup-service">
             <h5 class="teaser-heading">DEMIS-destination-lookup-service</h5>
           </a>
           <span>The Destination Lookup Services allow the DEMIS Users to send Subsequent Notifications</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-hospital-location-service">
+            <h5 class="teaser-heading">DEMIS-hospital-location-service</h5>
+          </a>
+          <span>This service provides information for hospital location data. For any valid IK-Number it provides a list of allowed/registered/known hospitals and the addresses of those.</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-bulk-inbound-service">
@@ -281,18 +286,6 @@
           <span>Service to provide the destination of a notification. The evaluation is based on the assignment of all addresses in Germany to a public health  department by the RKI. In principle, the IfSG is followed here, which prescribes the order in which the addresses of a notification must be used to determine the recipient of a notification.</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-antibiotic-resistance-surveillance-service">
-            <h5 class="teaser-heading">DEMIS-antibiotic-resistance-surveillance-service</h5>
-          </a>
-          <span>Service to enable laboratories and hospitals to transmit data to ARS (Antibiotic Resistance Surveillance) via their primary systems (KIS/LIS)</span>
-        </div>
-        <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-bedoccupancy">
-            <h5 class="teaser-heading">DEMIS-portal-bedoccupancy</h5>
-          </a>
-          <span>The web-based microfrontend Portal-BedOccupancy is part of the DEMIS Notification-Portal Microfrontends. It enables staff to deliver data about the current number of occupied and operable beds for adults and children in their hospital to fullfil the law: § 13 IfSG - Einzelnorm.</span>
-        </div>
-        <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-service-demo">
             <h5 class="teaser-heading">DEMIS-service-demo</h5>
           </a>
@@ -305,16 +298,22 @@
           <span>This service serves as a central processing point for report notifications to the DEMIS core. As a central interface, other services such as the validation service are addressed, the results are bundled and transferred to the NCAPI</span>
         </div>
         <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-bedoccupancy">
+            <h5 class="teaser-heading">DEMIS-portal-bedoccupancy</h5>
+          </a>
+          <span>The web-based microfrontend Portal-BedOccupancy is part of the DEMIS Notification-Portal Microfrontends. It enables staff to deliver data about the current number of occupied and operable beds for adults and children in their hospital to fullfil the law: § 13 IfSG - Einzelnorm.</span>
+        </div>
+        <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-portal-pathogen">
             <h5 class="teaser-heading">DEMIS-portal-pathogen</h5>
           </a>
           <span>The web-based microfrontend Portal-Pathogen is part of the DEMIS Notification-Portal Microfrontends. It allows staff to report notifcation category and specimen data about their patients according to the law.: §7 Abs. 1 IfSG: Meldepflichtige Nachweise von Krankheitserregern.</span>
         </div>
         <div class="teaser-text my-4">
-          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-surveillance-pseudonym-service">
-            <h5 class="teaser-heading">DEMIS-surveillance-pseudonym-service</h5>
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-antibiotic-resistance-surveillance-service">
+            <h5 class="teaser-heading">DEMIS-antibiotic-resistance-surveillance-service</h5>
           </a>
-          <span>Service for the creation of pseudonyms in the context of surveillance programs</span>
+          <span>Service to enable laboratories and hospitals to transmit data to ARS (Antibiotic Resistance Surveillance) via their primary systems (KIS/LIS)</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-context-enrichment-service">
@@ -333,6 +332,12 @@
             <h5 class="teaser-heading">DEMIS-portal-disease</h5>
           </a>
           <span>The web-based microfrontend Portal-Disease is part of the DEMIS Notification-Portal Microfrontends. It allows staff to report diseases according to the law.: § 6 IfSG Meldepflichtige Krankheiten.</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-surveillance-pseudonym-service">
+            <h5 class="teaser-heading">DEMIS-surveillance-pseudonym-service</h5>
+          </a>
+          <span>Service for the creation of pseudonyms in the context of surveillance programs</span>
         </div>
         <div class="teaser-text my-4">
           <a class="text-decoration-none" href="https://github.com/gematik/DEMIS-lifecycle-validation-service">
@@ -407,6 +412,25 @@
             <h5 class="teaser-heading">kim-attachment-service</h5>
           </a>
           <span>null</span>
+        </div>
+      </div>
+      <div class="tab-pane fade"
+           id="ZTS"
+           role="tabpanel" aria-labelledby="ZTS-tab">
+        <a>
+          <h3 class="teaser-heading bg-neongreen-after">ZTS</h3>
+        </a>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/zts-canonical-redirector">
+            <h5 class="teaser-heading">zts-canonical-redirector</h5>
+          </a>
+          <span>The ZTS Canonical Redirector API is a service that resolves FHIR resources based on their canonical URLs or FHIR resource type &amp; identifier and redirects clients to the appropriate ZTS (Zentraler Terminologieserver) page.</span>
+        </div>
+        <div class="teaser-text my-4">
+          <a class="text-decoration-none" href="https://github.com/gematik/zts-npm-proxy">
+            <h5 class="teaser-heading">zts-npm-proxy</h5>
+          </a>
+          <span>Service that serves NPM Packages from a private Google Artifact NPM Repository, including serving of Package Feeds.</span>
         </div>
       </div>
     </section>
